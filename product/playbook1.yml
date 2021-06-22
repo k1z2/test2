@@ -1,20 +1,14 @@
-  collections: 
-    - 
-      collection: arubanetworks.aoscx
-  gather_facts: false
   hosts: all
-  roles: 
-    - 
-      role: arubanetworks.aoscx_role
+  collections: 
+    - arubanetworks.aoscx
+  gather_facts: false
   tasks: 
-    - 
-      aoscx_banner: 
-        banner: |-
+    - name: aoscx_banner
+      banner_type: banner      
+      banner: |
             **************************************************************
             ************************WELCOME*******************************
             ***************************TO*********************************
             ************************THE AOS-CX****************************
             **********************ANSIBLE WORKSHOP************************
             **************************************************************
-        banner_type: banner
-      name: "Create Banner"
