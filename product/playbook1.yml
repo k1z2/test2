@@ -1,4 +1,4 @@
-- hosts: core
+- hosts: all
   gather_facts: False
   roles:
   - role: arubanetworks.aoscx_role
