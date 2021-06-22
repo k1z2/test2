@@ -1,11 +1,11 @@
 all:
   hosts:
     core:
-      ansible_host: 10.251.1.103
+      ansible_host: 192.168.50.142
       ansible_user: admin
-      ansible_password: aruba123
+      ansible_password: admin
       ansible_connection: httpapi
-      ansible_network_os: aoscx
+      ansible_network_os: arubanetworks.aoscx.aoscx
       ansible_httpapi_use_ssl: True
       ansible_acx_no_proxy: True
       ansible_httpapi_validate_certs: False
